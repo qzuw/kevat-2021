@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>
+    
+    Tietokantojen perusteet kevät 2021
+    
+  </title>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        CommonHTML: {
+          scale: 87
+        }
+      });
+      </script>
+  <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  <link rel='stylesheet' type='text/css' media='screen' href=/kevat-2021/assets/css/main.css>
+  <link rel='stylesheet' type='text/css' media='screen' href=/kevat-2021/assets/css/syntax.css>
+
+  <script src=/kevat-2021/assets/js/main.js></script>
+
+</head>
+
+<body>
+
+    
+<nav class="no-nav" id="side-nav" >
+    <button id="hide" onclick="hideSideNav()"> &#x2715;</button>
+    <button id="show" onclick="showSideNav()"> </button>
+    <h2>Tietokantojen perusteet kevät 2021</h2>
+    
+    <ol>
+
+        <li class="side-nav-obj" id="indexnav"><a href=/kevat-2021/index>Etusivu </a></li>
+        
+        
+        
+        <li class="side-nav-obj" id="Materiaalinav"><a href="/kevat-2021/pages/materiaali.html">Materiaali</a></li>
+        
+        
+        
+        
+        
+        <li class="side-nav-obj" id="Tehtävätnav"><a href="/kevat-2021/pages/tehtavat.html">Tehtävät</a></li>
+        
+        
+        <br>
+        
+        
+        <li class="side-nav-obj" id="1. Johdantonav"><a href="/kevat-2021/content/osa-1/index.html">1. Johdanto</a></li>
+        
+        
+            
+            <li class="side-nav-sub-obj" id="Mikä on tietokanta?nav"><a href="/kevat-2021/content/osa-1/index.html#mikä-on-tietokanta?">Mikä on tietokanta?</a></li>
+        
+            
+            <li class="side-nav-sub-obj" id="Tee-se-itse-tietokantanav"><a href="/kevat-2021/content/osa-1/index.html#tee-se-itse-tietokanta">Tee-se-itse-tietokanta</a></li>
+        
+            
+            <li class="side-nav-sub-obj" id="Relaatiomalli ja SQL-kielinav"><a href="/kevat-2021/content/osa-1/index.html#relaatiomalli-ja-sql-kieli">Relaatiomalli ja SQL-kieli</a></li>
+        
+            
+        
+        
+        
+        
+        <li class="side-nav-obj" id="2. SQL-kielen perusteetnav"><a href="/kevat-2021/content/osa-2/index.html">2. SQL-kielen perusteet</a></li>
+        
+        
+            
+            <li class="side-nav-sub-obj" id="Peruskomennotnav"><a href="/kevat-2021/content/osa-2/index.html#peruskomennot">Peruskomennot</a></li>
+        
+            
+            <li class="side-nav-sub-obj" id="Yhteenveto ja ryhmittelynav"><a href="/kevat-2021/content/osa-2/index.html#yhteenveto-ja-ryhmittely">Yhteenveto ja ryhmittely</a></li>
+        
+            
+            <li class="side-nav-sub-obj" id="SQLite-tietokantanav"><a href="/kevat-2021/content/osa-2/index.html#sqlite-tietokanta">SQLite-tietokanta</a></li>
+        
+            
+        
+        
+        
+        
+        <li class="side-nav-obj" id="3. Monen taulun kyselytnav"><a href="/kevat-2021/content/osa-3/index.html">3. Monen taulun kyselyt</a></li>
+        
+        
+            
+            <li class="side-nav-sub-obj" id="Taulujen viittauksetnav"><a href="/kevat-2021/content/osa-3/index.html#taulujen-viittaukset">Taulujen viittaukset</a></li>
+        
+            
+            <li class="side-nav-sub-obj" id="Liitostaulutnav"><a href="/kevat-2021/content/osa-3/index.html#liitostaulut">Liitostaulut</a></li>
+        
+            
+            <li class="side-nav-sub-obj" id="JOIN-syntaksinav"><a href="/kevat-2021/content/osa-3/index.html#join-syntaksi">JOIN-syntaksi</a></li>
+        
+            
+        
+        
+        
+        
+        <li class="side-nav-obj" id="4. Lisää SQL-kielestänav"><a href="/kevat-2021/content/osa-4/index.html">4. Lisää SQL-kielestä</a></li>
+        
+        
+            
+            <li class="side-nav-sub-obj" id="Tyypit ja lausekkeetnav"><a href="/kevat-2021/content/osa-4/index.html#tyypit-ja-lausekkeet">Tyypit ja lausekkeet</a></li>
+        
+            
+            <li class="side-nav-sub-obj" id="NULL-arvotnav"><a href="/kevat-2021/content/osa-4/index.html#null-arvot">NULL-arvot</a></li>
+        
+            
+            <li class="side-nav-sub-obj" id="Alikyselytnav"><a href="/kevat-2021/content/osa-4/index.html#alikyselyt">Alikyselyt</a></li>
+        
+            
+            <li class="side-nav-sub-obj" id="Lisää tekniikoitanav"><a href="/kevat-2021/content/osa-4/index.html#lisää-tekniikoita">Lisää tekniikoita</a></li>
+        
+            
+        
+        
+        
+        
+        <li class="side-nav-obj" id="5. Tietokannat ohjelmoinnissanav"><a href="/kevat-2021/content/osa-5/index.html">5. Tietokannat ohjelmoinnissa</a></li>
+        
+        
+            
+            <li class="side-nav-sub-obj" id="Tietokannan käyttäminennav"><a href="/kevat-2021/content/osa-5/index.html#tietokannan-käyttäminen">Tietokannan käyttäminen</a></li>
+        
+            
+            <li class="side-nav-sub-obj" id="Käyttöliittymänav"><a href="/kevat-2021/content/osa-5/index.html#käyttöliittymä">Käyttöliittymä</a></li>
+        
+            
+            <li class="side-nav-sub-obj" id="Mitä tehdä missäkin?nav"><a href="/kevat-2021/content/osa-5/index.html#mitä-tehdä-missäkin?">Mitä tehdä missäkin?</a></li>
+        
+            
+        
+        
+        
+        
+        <li class="side-nav-obj" id="6. Tietokannan suunnittelunav"><a href="/kevat-2021/content/osa-6/index.html">6. Tietokannan suunnittelu</a></li>
+        
+        
+            
+            <li class="side-nav-sub-obj" id="Suunnittelun periaatteetnav"><a href="/kevat-2021/content/osa-6/index.html#suunnittelun-periaatteet">Suunnittelun periaatteet</a></li>
+        
+            
+            <li class="side-nav-sub-obj" id="Tiedon atomisuusnav"><a href="/kevat-2021/content/osa-6/index.html#tiedon-atomisuus">Tiedon atomisuus</a></li>
+        
+            
+            <li class="side-nav-sub-obj" id="Toisteinen tietonav"><a href="/kevat-2021/content/osa-6/index.html#toisteinen-tieto">Toisteinen tieto</a></li>
+        
+            
+            <li class="side-nav-sub-obj" id="Suunnitteluesimerkkinav"><a href="/kevat-2021/content/osa-6/index.html#suunnitteluesimerkki">Suunnitteluesimerkki</a></li>
+        
+            
+        
+        
+        
+        
+        <li class="side-nav-obj" id="7. Tietokannan ominaisuudetnav"><a href="/kevat-2021/content/osa-7/index.html">7. Tietokannan ominaisuudet</a></li>
+        
+        
+            
+            <li class="side-nav-sub-obj" id="Tiedon eheysnav"><a href="/kevat-2021/content/osa-7/index.html#tiedon-eheys">Tiedon eheys</a></li>
+        
+            
+            <li class="side-nav-sub-obj" id="Transaktiotnav"><a href="/kevat-2021/content/osa-7/index.html#transaktiot">Transaktiot</a></li>
+        
+            
+            <li class="side-nav-sub-obj" id="Kyselyjen suoritusnav"><a href="/kevat-2021/content/osa-7/index.html#kyselyjen-suoritus">Kyselyjen suoritus</a></li>
+        
+            
+            <li class="side-nav-sub-obj" id="Indeksitnav"><a href="/kevat-2021/content/osa-7/index.html#indeksit">Indeksit</a></li>
+        
+            
+        
+        
+        
+    </ol>
+</nav>
+
+    <div class="page-content">
+        <div class="header">
+    <h1>Tietokantojen perusteet <br> kevät 2021</h1>
+</div>
+
+
+        <div class="content">
+    <div class="table-of-content" id="tof" style="display: none;">
+    <ul>
+        
+    </ul>
+</div>
+
+    <h1 id="tietoa-kurssista">Tietoa kurssista</h1>
+
+<p><em>Tietokantojen perusteet</em> on 5 op laajuinen tietojenkäsittelytieteen perusopintokurssi, joka esittelee suurten tietomäärien käsittelyyn liittyviä tekniikoita ja haasteita. Tutustumme kurssilla relaatiotietokantoihin ja niihin liittyvään SQL-kieleen.</p>
+
+<p>Keväällä 2021 kurssi muodostuu viikoittaisista luennoista ja automaattisesti tarkastettavista tehtävistä. Kurssi järjestetään etänä samalla tavalla Helsingin yliopiston tutkinto-opiskelijoille ja Avoimen yliopiston opiskelijoille.</p>
+
+<h2 id="ilmoittautuminen">Ilmoittautuminen</h2>
+
+<p>Jos olet Helsingin yliopiston tutkinto-opiskelija, ilmoittaudu kurssille WebOodin kautta.</p>
+
+<p>Jos suoritat kurssin Avoimen yliopiston kautta, saat ohjeet kurssisuorituksen rekisteröintiin kurssin lopussa.</p>
+
+<h2 id="luennot-ja-ohjaus">Luennot ja ohjaus</h2>
+
+<p>Kurssilla järjestetään viikoittain Zoom-luento tiistaisin klo 10–12. Luentopäivät ovat 19.1., 26.1., 2.2., 9.2., 16.2., 23.2. ja 2.3.</p>
+
+<p>Kurssin Telegram-ryhmässä voit keskustella netissä muiden opiskelijoiden ja kurssin järjestäjien kanssa. <a href="https://t.me/tkt_tikape">Liity ryhmään</a></p>
+
+<h2 id="tehtävät-ja-arvostelu">Tehtävät ja arvostelu</h2>
+
+<p>TODO</p>
+
+<h2 id="yhteystiedot">Yhteystiedot</h2>
+
+<p>Kurssin luennoija keväällä 2021 on Antti Laaksonen. Voit ottaa yhteyttä lähettämällä <a href="mailto:ahslaaks@cs.helsinki.fi">sähköpostia</a> tai viestin Telegramissa.</p>
+
+</div>
+        <div class="footer">
+    <img src=/kevat-2021/assets/img/HY_logo.png>
+    </div>
+    </div>
+
+</body>
+
+</html>
